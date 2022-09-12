@@ -23,6 +23,10 @@ Then('I expect response body to contain', function (value) {
   spec.response().should.have.bodyContains(value);
 });
 
+Then(/^I expect response follows json schema$/, function (json) {
+  spec.response().should.have.jsonSchema(JSON.parse(json));
+});
+
 After(() => {
   spec.end();
 });
