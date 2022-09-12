@@ -14,17 +14,16 @@ Feature: example
       """
       {
       type: 'array',
-      minItems: 1,
-      items: {
-      type: 'object',
-      properties: {
-      name: {type: 'string', minLength: 1},
-      symbol: {type: 'string', minLength: 1},
-      contractAddress: {type: 'string', minLength: 42, maxLength: 42},
-      decimals: {type: 'integer'}
-      },
-      required: ['name', 'symbol', 'contractAddress', 'decimals']
-      },
+        items: {
+          type: 'object',
+          properties: {
+            name: {type: 'string'},
+            symbol: {type: 'string'},
+            contractAddress: {type: 'string'},
+            decimals: {type: 'integer'}
+          },
+          required: ['name', 'symbol', 'contractAddress', 'decimals']
+        },
       uniqueItems: true,
-      }
-      """
+    }
+    """
