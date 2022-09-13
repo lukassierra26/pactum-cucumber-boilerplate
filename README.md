@@ -10,7 +10,7 @@ node -v
 npm -v
 ```
 
-Use pusakatezt to install project.
+Use pusakatest to install project.
 
 ```bash
 npx pusakatest
