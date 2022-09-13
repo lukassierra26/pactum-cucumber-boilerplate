@@ -1,0 +1,124 @@
+[
+  {
+    "description": "  swallet API Automation with Token example",
+    "elements": [
+      {
+        "description": "",
+        "id": "example;get-token-list",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Get token list",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121208
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I make a GET request to /tokens",
+            "match": {
+              "location": "features/support/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I receive a response",
+            "match": {
+              "location": "features/support/steps.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8400624,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I expect response status code to be 200",
+            "match": {
+              "location": "features/support/steps.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "\"name\":\"LINK\",\"symbol\"",
+                "line": 10
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I expect response body to contain",
+            "match": {
+              "location": "features/support/steps.js:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\ntype: 'array',\n  items: {\n    type: 'object',\n    properties: {\n      name: {type: 'string'},\n      symbol: {type: 'string'},\n      contractAddress: {type: 'string'},\n      decimals: {type: 'integer'}\n    },\n    required: ['name', 'symbol', 'contractAddress', 'decimals']\n  },\nuniqueItems: true,\n}",
+                "line": 14
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I expect response follows json schema",
+            "match": {
+              "location": "features/support/steps.js:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 110625
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "example",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "example",
+    "tags": [],
+    "uri": "features/token.feature"
+  }
+]

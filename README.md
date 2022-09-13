@@ -21,9 +21,3 @@ npx pusakatest
 ```bash
 npm run test
 ```
-
-## Generating Cucumber Report
-
-```bash
-npm run test-publish
-```

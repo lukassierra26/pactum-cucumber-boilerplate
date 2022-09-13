@@ -1,6 +1,0 @@
-{
-    "default": {
-        "language": "en",
-        "format": ["summary", "html:cucumber-report.html"]
-    }
-}

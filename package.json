@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js --config config/cucumber.js"
   },
   "repository": {
     "type": "",
@@ -14,7 +14,10 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "@cucumber/cucumber": "^8.4.0",
     "pactum": "latest"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.5.3",
+    "cucumber-html-reporter": "^5.5.0"
   }
 }
