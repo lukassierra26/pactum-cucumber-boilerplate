@@ -21,3 +21,4 @@ npx pusakatest
 ```bash
 npm run test
 ```
+## The html cucumber report can be found in: reports/cucumber_report.html
